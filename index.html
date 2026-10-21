@@ -3,89 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Git</title>
+    <title>Paolo e Francesca</title>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="startTime(); mostraDataSeparata()">
+<body onload="startTime()">
     <div id="txt"></div>
-
-  <div id="dataOggi" style="font-size: 18px; margin-top: 20px;"></div>
-
-  <h1>Accessibilità</h1>
-  <button onclick="readPage()">🗣️ Leggi la pagina</button>
-  <button onclick="stopReading()">🛑 Interrompi</button>
-  <button onclick="toggleTheme()">🌙 Cambia tema</button>
-  <hr>
- <h1>info su Git</h1>
-  <h2>Git</h2>
-  <p>
-  Git è un <strong>sistema di controllo di versione distribuito</strong> creato da  <a target="_blank" rel="noopener noreferrer" href="https://it.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a>   nel 2005.
-  Permette di tracciare le modifiche al codice sorgente e di collaborare con altri sviluppatori.
+    <h1>Accessibilità</h1>
+   
+    <button onclick="toggleTheme()"  >🌙 Cambia tema</button>
+   <h1>Paolo e Francesca</h1>
+    <p>Paolo Malatesta e Francesca da <u>Rimini</u> sono due personaggi realmente esistiti nel <u>Medioevo,</u> diventati famosi grazie a <b>Dante Alighieri</b> nella Divina Commedia
+</p>
+<h2>La storia vera
+</h2>
+<p>Francesca era figlia della famiglia da Polenta di Ravenna. Per motivi politici fu data in sposa a <b>Gianciotto Malatesta,</b> signore di <u>Rimini.</u>
+  <br> Il matrimonio serviva a creare un’alleanza tra le due famiglie.
+</p>
+<p>Secondo la tradizione raccontata da <b>Giovanni Boccaccio</b>, Francesca sarebbe stata ingannata: le avrebbero fatto credere che avrebbe sposato Paolo, fratello di Gianciotto, che era bello e gentile.
+  <br> In realtà il marito era Gianciotto, descritto come meno affascinante e anche zoppo.
+</p>
+<p>Francesca e Paolo si innamorarono. Non sappiamo con certezza come nacque il loro amore, ma la tradizione racconta che un giorno stavano leggendo insieme la storia di Lancillotto e Ginevra. Quando nel libro i due personaggi si baciano, anche Paolo e Francesca si baciarono.
+  <br> Da quel momento iniziò la loro relazione segreta.
+</p>
+<p>Quando Gianciotto scoprì il tradimento, li uccise entrambi, probabilmente intorno al <b>1284.</b> Non si sa con sicurezza dove avvenne il delitto: alcuni parlano del Castello di Gradara, altri di altre rocche in Romagna.
+</p>
+<h2><a target="_blank" rel="noopener noreferrer" href="https://it.wikipedia.org/wiki/Divina_Commedia">Divina Commedia</a></h2>
+<img src="https://annamariaarvia.wordpress.com/wp-content/uploads/2019/11/paolo-e-francesca-immagine.jpg?w=900">
+<p>Nel Canto V dell’Inferno, Dante incontra Paolo e Francesca nel secondo cerchio, dove sono puniti i lussuriosi. 
+  <br>Qui le anime sono trascinate senza sosta da un vento fortissimo, simbolo della passione che in vita li ha travolti.
+</p>
+<p>Francesca racconta a Dante la loro storia con parole dolci e tristi.
+  <br> Dice che l’amore li ha uniti e che il libro fu “galeotto”, cioè fece da tramite al loro primo bacio. Paolo non parla, ma piange.
+</p>
+<p>Dante è molto colpito dal loro racconto. 
+  <br>Prova compassione per loro e alla fine sviene per il dolore.
+  <br> Anche se li mette all’Inferno perché hanno commesso adulterio, mostra grande pietà e comprensione per il loro amore.
 </p>
 
-<h2>Perché usare Git?</h2>
-<ul>
-  <li>✅ Tiene traccia di ogni modifica al progetto</li>
-  <li>✅ Permette di tornare a versioni precedenti</li>
-  <li>✅ Facilita il lavoro in team</li>
-  <li>✅ È veloce e sicuro</li>
-</ul>
-
-<h2>Comandi principali di Git</h2>
-<pre>
-git init        # Inizializza un nuovo repository
-git clone URL   # Clona un repository esistente
-git add .       # Aggiunge i file all'area di staging
-git commit -m "Messaggio"   # Salva le modifiche con un messaggio
-git status      # Mostra lo stato dei file
-git log         # Visualizza la cronologia dei commit
-git push        # Invia le modifiche al repository remoto
-git pull        # Scarica e integra le modifiche dal remoto 
-</pre>
-
-<h2>Flusso di lavoro tipico</h2>
-<ol>
-  <li>Creare o clonare un repository</li>
-  <li>Modificare i file</li>
-  <li>Aggiungere i file con <code>git add</code></li>
-  <li>Salvare le modifiche con <code>git commit</code></li>
-  <li>Condividere il lavoro con <code>git push</code></li>
-</ol>
-<hr>
-<h1>La Storia di Git</h1>
-<h2>Timeline di Git</h2>
-<ul>
-  <li><strong>2005</strong> – Linus Torvalds crea Git per gestire lo sviluppo del kernel Linux.</li>
-  <li><strong>2008</strong> – Nasce GitHub, che rende Git accessibile e collaborativo online.</li>
-  <li><strong>2010</strong> – Git diventa lo standard per la maggior parte dei progetti open source.</li>
-  <li><strong>2014</strong> – GitLab emerge come alternativa self‑hosted a GitHub.</li>
-  <li><strong>2020</strong> – Milioni di repository attivi su GitHub e GitLab, Git domina il versionamento.</li>
-  <li><strong>Oggi</strong> – Git è usato da aziende, università e sviluppatori di tutto il mondo.</li>
-</ul>
-<hr>
-<h1> Come installare Git?</h1>
-<p>Ora vediamo come installare git Sul vostro computer vediamo i tutorial:</p>
-<ul>
-  <li><strong>Windows</strong>-Scarica l’installer ufficiale da <a target="_blank" rel="noopener noreferrer" href="https://git-scm.com/download/win">git-scm.com</a></li>
-  <li><strong>Linux</strong>- Usa il gestore pacchetti della tua distribuzione (es. <code>sudo apt install git</code> su Ubuntu)</li>
-  <li><strong>MacOS</strong>-Puoi installare Git in diversi modi: <ul> <li>Con <code>xcode-select --install</code> (installa gli strumenti da riga di comando di Xcode)</li> <li>Con Homebrew: <code>brew install git</code></li> <li>Scaricando il pacchetto da <a target="_blank" rel="noopener noreferrer" href="https://git-scm.com/download/mac">git-scm.com</a> </li> </ul> </li> 
-</ul>
-<img src="https://media.planview.com/wp-content/uploads/2022/10/git-logo-png-transparent-1.png" alt="Logo di Git">
+<h2>Perché sono importanti?
+</h2>
 <p>
-  In pratica git È molto utile ,Perché permette di tracciare le versioni di qualsiasi <b>software</b>.
-  <br>
-</p>
-<h1> Quiz su git</h1>
-<div class="question">
-  <p>Qual è il comando per inizializzare un nuovo repository Git?</p>
-  <label><input type="radio" name="q1" value="a"> git start</label><br>
-  <label><input type="radio" name="q1" value="b"> git init</label><br>
-  <label><input type="radio" name="q1" value="c"> git new</label><br>
-  <label><input type="radio" name="q1" value="d"> git create</label>
-</div>
-<hr>
-<img src="https://media.geeksforgeeks.org/wp-content/uploads/20250710172654460719/What-is-Git-repository.webp" width="300">
-Quindi git è uno strumento molto utile.
+    La loro storia è diventata il simbolo dell’amore passionale e tragico.
+    <br> Dopo Dante, molti scrittori, musicisti e artisti hanno raccontato di nuovo la loro vicenda, rendendoli una delle coppie più famose della letteratura italiana.
+    </p>
+    <p><img src="https://gioit.h-cdn.co/assets/17/11/1280x960/sd-aspect-1489841311-paolofrancesca.jpg" width="300"></p>
+    <hr>
+    <a href="https://www.isissgobetti.edu.it/">PaoloeFrancesca</a>
+    <p> SAFFDDS ©
+        </p>
 </body>
 </html>
